@@ -1,11 +1,11 @@
 # Welcome to the homepage of Ausdroid AI & Robotics Student Group
-1
+
 ## Introduction
 
 This is the page for table of content
 
 ## Chapter 1: Fundamentals
-2
+This chapter contains the history, background and interests of this student group. You can quickly find out whether you are interested in us by this [link](chapter_00/introduction.md)
 ## Chapter 2: Robot Operating System (ROS)
 3
 ## Chapter 3: Robot Hardware System
