@@ -11,10 +11,103 @@ kernelspec:
   name: python3
 ---
 
-(sec:mdps)=
-# Markov Decision Processes
 
-## Learning outcomes
+# Chapter 01 Introduction to Robot Operating System (ROS)
+
+## Introduction and Setup
+
+This session primarily aims to provide you with a foundational understanding of the software platform we utilize, which is prevalent in the robotics industry. 
+After this session, you will possess all the necessary tools and knowledge to begin programming your robot, whether in a real-world scenario or in simulation.
+
+In this session, we covers basic introduction on Linux (Ubuntu and ARM), Git (GitHub), docker and ROS.
+
+### Why ROS
+The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. 
+From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. 
+And it's all open source. 
+
+
+### Linux
+
+#### Introduction
+Just like Windows, iOS, and Mac OS, Linux is an operating system. In fact, one of the most popular platforms on the planet, Android, is powered by the Linux operating system. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn’t function.
+
+![Linux in 100s](https://youtu.be/rrB13utjYV4)
+
+The Linux operating system comprises several different pieces:
+
+*   **Bootloader** –  The software that manages the boot process of your computer. For most users, this will simply be a splash screen that pops up and eventually goes away to boot into the operating system.
+*   **Kernel** – This is the one piece of the whole that is actually called ‘Linux’. The kernel is the core of the system and manages the CPU, memory, and peripheral devices. The kernel is the lowest level of the OS.
+*   **Init system** – This is a sub-system that bootstraps the user space and is charged with controlling daemons. One of the most widely used init systems is systemd, which also happens to be one of the most controversial. It is the init system that manages the boot process, once the initial booting is handed over from the bootloader (i.e., GRUB or GRand Unified Bootloader).
+*   **Daemons** – These are background services (printing, sound, scheduling, etc.) that either start up during boot or after you log into the desktop.
+*   **Graphical server** – This is the sub-system that displays the graphics on your monitor. It is commonly referred to as the X server or just X.
+*   **Desktop environment** – This is the piece that the users actually interact with. There are many desktop environments to choose from (GNOME, Cinnamon, Mate, Pantheon, Enlightenment, KDE, Xfce, etc.). Each desktop environment includes built-in applications (such as file managers, configuration tools, web browsers, and games).
+*    **Applications** – Desktop environments do not offer the full array of apps. Just like Windows and macOS, Linux offers thousands upon thousands of high-quality software titles that can be easily found and installed. Most modern Linux distributions (more on this below) include App Store-like tools that centralize and simplify application installation. For example, Ubuntu Linux has the Ubuntu Software Center (a rebrand of GNOME Software) which allows you to quickly search among the thousands of apps and install them from one centralized location.
+
+
+#### Ubuntu 20.04
+Ubuntu is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots. All of the editions can run on a computer alone, or in a virtual machine.
+
+#### Alone Installation
+You will need another machine (windows or linux) to download installable media and create bootable USB. 
+
+The details can be found in this [link](https://phoenixnap.com/kb/install-ubuntu-20-04)
+
+
+#### Dual system Installation
+The details can be found in this [link](https://linuxconfig.org/how-to-install-ubuntu-20-04-alongside-windows-10-dual-boot)
+
+
+### Installing ROS
+
+Once your Ubuntu 20.04 is up and running, you can install the ROS following this [link](http://wiki.ros.org/noetic/Installation/Ubuntu).
+
+Please choose to install the full version: `Desktop-Full Install`.
+
+
+
+
+<!-- 
+
+
+
+
+### What do we do?
+
+## Competition
+
+### RoboMaster University AI Challenge
+
+#### ICRA 2018
+#### ICRA 2019
+#### ICRA 2020
+#### ICRA 2021
+
+## Research
+
+### Engineering
+
+#### Area of Interests
+#### Eligibility
+#### Potential Topics
+
+
+
+
+### AI
+#### Area of Interests
+#### Eligibility
+#### Potential Topics
+##### Epistemic Planning -->
+
+
+
+
+
+
+
+
+<!-- ## Learning outcomes
 
 ````{margin}
 ```{admonition} Video byte: Introduction to MDPs
@@ -30,8 +123,8 @@ The learning outcomes of this chapter are:
    
 3.  Compare MDPs to model of classical planning
 
-4.  Explain how Bellman equations are solutions to MDP problems
-
+4.  Explain how Bellman equations are solutions to MDP problems -->
+<!-- 
 ## Chapter Overview
 
 ````{margin}
@@ -556,4 +649,4 @@ POMDP is a **belief state**, which defined the probability of being in each stat
 
 Like MDPs, solutions are policies that map belief states into actions. Optimal policies maximise the expected reward.
 
-We will not cover this in detail in these notes. However, POMDPs are  a generalisation of MDPs, and they are more suited to practical solutions in  planning for autonomy than standard MDPs because it is unusual to always know the true state of the world in which an agent  is acting.
+We will not cover this in detail in these notes. However, POMDPs are  a generalisation of MDPs, and they are more suited to practical solutions in  planning for autonomy than standard MDPs because it is unusual to always know the true state of the world in which an agent  is acting. -->
