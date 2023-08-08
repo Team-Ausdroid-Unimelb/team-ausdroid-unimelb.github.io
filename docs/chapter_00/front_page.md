@@ -17,7 +17,7 @@ kernelspec:
 ## Introduction
 
 ### Overview
-![Introduction Video](https://youtu.be/T8T8UH5eyoM)
+[![introduction video](https://img.youtube.com/vi/T8T8UH5eyoM/maxresdefault.jpg)](https://youtu.be/T8T8UH5eyoM)
 
 ### About Us
 
