@@ -1,4 +1,4 @@
-- [Home](/)
+- [Home](/docs/)
   <!-- - 0
     - [0xabdulkhalid](/templates/0xabdulkhalid.md)
   - 1
