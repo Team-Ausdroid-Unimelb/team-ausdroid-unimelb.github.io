@@ -14,10 +14,9 @@ kernelspec:
 
 # Chapter 01: Introduction to Robot Operating System (ROS)
 
-## Section 01: ROS Installation
+## Section 01: ROS Installation and Coding Basics
 
-This session primarily aims to provide you with a foundational understanding of the software platform we utilize, which is prevalent in the robotics industry. 
-After this session, you will possess all the necessary tools and knowledge to begin programming your robot, whether in a real-world scenario or in simulation.
+
 
 In this session, we covers basic introduction on Linux (Ubuntu and ARM), Git (GitHub), docker and ROS.
 
@@ -81,19 +80,25 @@ With Git, multiple developers can work on the same project simultaneously withou
 * Tag
 * Upstream
 
-#### Repo
+#### Basic Git Commands:
 
-Basic Git Commands:
+`git init` : Initializes a new Git repository.
 
-    git init: Initializes a new Git repository.
-    git clone <repository>: Creates a copy of a remote repository on your local machine.
-    git status: Shows the status of changes in the working directory.
-    git add <file/folder>: Adds changes in the working directory to the staging area.
-    git commit -m "message": Captures a snapshot of the staged changes.
-    git push: Pushes committed changes to a remote repository.
-    git pull: Fetches changes from a remote repository and merges them into the current branch.
+`git clone <repository>`: Creates a copy of a remote repository on your local machine.
 
-In Conclusion:
+`git status`: Shows the status of changes in the working directory.
+
+`git add <file/folder>`: Adds changes in the working directory to the staging area.
+
+`git commit -m "message"`: Captures a snapshot of the staged changes.
+
+`git push`: Pushes committed changes to a remote repository.
+
+`git pull`: Fetches changes from a remote repository and merges them into the current branch.
+
+
+
+#### In Conclusion:
 Git, as a distributed version control system, has become the industry standard for software development, known for its robustness, flexibility, and ability to handle large-scale projects efficiently. Whether you're a solo developer or part of a massive development team, mastering Git is essential in the modern coding landscape.
 
 
