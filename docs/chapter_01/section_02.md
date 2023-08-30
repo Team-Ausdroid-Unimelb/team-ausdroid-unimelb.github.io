@@ -15,13 +15,13 @@ kernelspec:
 
 ## Section 02: ROS Message, topic, publisher and subscriber
 
-In this section, we covers one of the ROS basic communication channel **Message**, and how to "send" or "receive" messages.
+In this section, we covers one of the ROS basic communication channels **Message**, and how to "send" or "receive" messages.
 
 ### ROS Message
 
-The type of ROS Message are described by a `msg` file, which is a simple text file that contains the fields of a ROS message. They are stored in the `./msg/` **directory** of a package and used to generate source code for messages in different languages. 
+The type of ROS Message are described by a `.msg` file, which is a simple text file that contains the fields of a ROS message. They are stored in the `./msg/` **directory** of a package and used to generate source code for messages in different languages. 
 
-msgs are just simple text files with a field type and field name per line. The field types you can use are:
+`.msg`s are just simple text files with a field type and field name per line. The field types you can use are:
 
 *  `int8`, `int16`, `int32`, `int64` (plus `uint*`)
 *  `float32`, `float64`
@@ -77,7 +77,7 @@ string first_name
 string last_name
 uint8 age
 # between 0-100
-uint32 score
+float32 marks
 ```
 
 #### 3. Update CMakeLists.txt
@@ -150,7 +150,7 @@ rosmsg show <package name>/<message name>
 ### Using ROS Message: Topic, publisher and subscriber
 
 Communication on topics happens by sending ROS messages between nodes.
-For the publisher and subscriber to communicate, the publisher and subscriber must send and receive the same type of message.
+For the publisher and subscriber to communicate, they must send and receive the same type of message.
 
 This part will instruct you create a ROS package that contains, some msg, some publisher and subscriber in both python and c++.
 
@@ -186,7 +186,7 @@ string first_name
 string last_name
 uint8 age
 # between 0-100
-uint32 score
+float32 marks
 ```
 
 #### 3. Create a python publisher with ROS builtIn message type:
@@ -387,24 +387,39 @@ Now, you can build your package:
 catkin build <your package name>
 ```
 
-#### 9. Exam your Message
+#### 9. Exam your Topic, publishers and subscribers
 Then, do not forget to source:
 ```bash
 source devel/setp.bash
 ```
 
-And check your message by either using `rosmsg list` to list all existing ROS messages:
+And check your message by using `rostopic list` to list all existing ROS messages:
 ```bash
-rosmsg list | grep <your message name>
+rostopic list | grep <your message name>
 ```
-or using `rosmsg package` to list all ROS messages from one ROS package:
+
+You can also display the details about this topic by:
 ```bash
-rosmsg package <your package name>
+rostopic info <topic name>
 ```
-You can also display the details (`-r`) in your message by:
+
+You can also view the messages in this topic by:
 ```bash
-rosmsg show <package name>/<message name>
+rostopic echo <topic name>
 ```
+with a few options:
+* `-n <i>` echo message from this topic for `i` times
+* `--filter "m.<field name> == 'sth'"` filter the message based on the given condition
+* `-b <bag file path and name>` save the messages into a ROS bag
+
+You can also publish a message into this topic by:
+```bash
+rostopic pub <topic name> <topic message type> <sample message>
+```
+* `-1` publish this message once
+* `-r <i>` publish this message at a rate of `i`
+
+
 
 
 
